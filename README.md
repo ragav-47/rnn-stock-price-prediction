@@ -4,21 +4,35 @@
 
 To develop a Recurrent Neural Network model for stock price prediction.
 
-## Problem Statement and Dataset
+## PROBLEM STATEMENT AND DATASET
+We aim to build a RNN model to predict the stock prices of Google using the dataset provided. The dataset has many features, but we will be predicting the "Open" feauture alone. We will be using a sequence of 60 readings to predict the 61st reading. <br>Note: These parameters can be changed as per requirements.
 
-## Neural Network Model
+## NEURAL NETWORK MODEL
 
-Include the neural network model diagram.
+![20221010_200204](https://user-images.githubusercontent.com/65499285/194890471-ef0632eb-d68e-4cd4-bea8-13158b3ef2f5.jpg)
+
+<br>
+
+60 Inputs with 60 Neurons in the RNN Layer (hidden) and one neuron for the Output Layer.
+<br>
+
+![image](https://user-images.githubusercontent.com/65499285/194799172-5e048bb8-7e8a-40cb-ac3f-d0b943292da7.png)
+
 
 ## DESIGN STEPS
 
-### STEP 1:
-
-### STEP 2:
-
-### STEP 3:
-
-Write your own steps
+### Step 1:
+Read the csv file and create the Data frame using pandas.
+### Step 2:
+Select the " Open " column for prediction. Or select any column of your interest and scale the values using MinMaxScaler.
+### Step 3:
+Create two lists for X_train and y_train. And append the collection of 60 readings in X_train, for which the 61st reading will be the first output in y_train. 
+### Step 4:
+Create a model with the desired number of nuerons and one output neuron.
+### Step 5: 
+Follow the same steps to create the Test data. But make sure you combine the training data with the test data.
+### Step 6:
+Make Predictions and plot the graph with the Actual and Predicted values.
 
 ## PROGRAM
 
